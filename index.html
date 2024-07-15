@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dumanov | Menu</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                            gray: "#424242",
+                        },
+                        backgroundImage: {
+                            "logo-adalya": "url('/assets/logo_adalya.png')",
+                            "footer-texture": "url('/img/footer-texture.png')",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="flex flex-col gap-[20px] p-[20px]">
+        <div></div>
+
+        <div class="grid grid-cols-1">
+            <div class="flex items-center justify-center w-full p-[10px] border-[1px] border-solid border-red bg-gray rounded-[10px]">
+                <img src="/assets/logo_adalya.png" alt="" class="w-fit h-[60px]" />
+            </div>
+            <h1 class="text-[20px] text-gray">Adalya</h1>
+        </div>
+
+        <div class="flex gap-[10px] p-[10px] items-center justify-start border-[1px] border-solid border-gray rounded-[10px]">
+            <img src="/assets/seftali.png" alt="" class="w-[60px] h-[60px]" />
+            <div class="flex flex-col">
+                <span>Seftai</span>
+                <span>sefatali, karpuz, cilek</span>
+            </div>
+            <div>300TL</div>
+        </div>
+    </body>
+</html>
